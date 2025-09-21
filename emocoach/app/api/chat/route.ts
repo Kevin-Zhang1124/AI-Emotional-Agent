@@ -1,3 +1,19 @@
+/*
+Core Backend Files: the heart of my backend
+
+This is my API endpoint that :
+  1. Receives messages from frontend
+  2. Calls Replicate's AI model
+  3. Returns AI responses
+
+What it does:
+  - Validates incoming data
+  - Formats prompts for the AI
+  - Calls Replicate API
+  - Returns structured responses
+  - Handles errors gracefully
+*/
+
 import { NextRequest, NextResponse } from 'next/server';
 import Replicate from 'replicate';
 import { formatPrompt } from '../../../lib/prompt';
